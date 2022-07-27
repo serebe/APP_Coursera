@@ -1,0 +1,41 @@
+---
+title: "APP COURSERA MODELS"
+author: "Sebastian Restrepo Betancur"
+date: '2022-07-27'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## APP FUNCTIONALITY
+
+The app has a fairly easy initial functionality, it is responsible for reviewing the different possible rgression models taking the different categories that the iris data has, looking for the relationships between Sepal width and Petal width, it is published in the following link:
+ 
+
+
+## Data visualization
+
+```{r}
+iris
+```
+
+
+## Data summary
+
+```{r cars, echo = TRUE}
+summary(iris)
+table(iris$Species)
+```
+
+## Histograms for Sepal and Petal width
+
+```{r pressure}
+par(mfrow=c(1,2))
+hist(iris$Sepal.Length, col="blue",main = "Histogram of Sepal Length",
+     xlab="Sepal Length")
+hist(iris$Petal.Width, col="red",main = "Histogram of Petal Length",
+     xlab="Petal Length")
+```
+
